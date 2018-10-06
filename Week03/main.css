@@ -673,16 +673,62 @@ img {
 
 /* WRAPPER - C(2nd) */
 
-.mod-amag-preview {
-  position: relative;
-  margin-bottom: 25px;
-  overflow: hidden;
-}
-
 .latest-headlines {
   text-align: left;
   margin-bottom: 25px;
 }
+
+.latest-headlines > ul > li > a {
+  display: block;
+  font: bold 12px Georgia, "Times New Roman", Times, serif;
+  padding: 0.25em 0;
+  text-decoration: none;
+  white-space: normal;
+  color: black;
+  text-align: inherit;
+}
+
+.scrollingDiv {
+  height: auto;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.scrollingDiv > ul > li {
+  display: inline-block;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: solid 0.1em gray;
+}
+
+.scrollingDiv > ul > li > img {
+  height: 207px;
+  width: 174px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.scrollingDiv > ul > li > p {
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+.scrollingDiv > ul > li > h3 {
+  text-align: center;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  white-space: normal;
+  padding: 0.5em;
+}
+
 
 /* MEDIA RULES */
 
@@ -848,4 +894,5 @@ img {
   .feat-excerpt {
     margin-bottom: 0;
   }
+
 }
